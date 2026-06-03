@@ -1,21 +1,13 @@
 
 package calculadoratesting;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
-/**
- *
- * @author Noxie-PC
- */
+import org.junit.Test;
+import org.junit.Before;
+import static org.junit.Assert.*;
 public class CalculadorTest {
     Calculador calculadorTester;
     
-    @BeforeEach
+    @Before
     public void setUp(){
       calculadorTester = new Calculador();
     }
@@ -24,7 +16,6 @@ public class CalculadorTest {
   public void testSumar() {
         System.out.println("Probando el metodo: Sumar");
         
-      
         double a = 5.5;
         double b = 4.5;
         double esperado = 10.0;
