@@ -3,13 +3,14 @@ package calculadoratesting;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class CalculadorTest {
     
     Calculador calculadorTester;
     
- // @Before
+ @BeforeEach
     public void setUp(){
       calculadorTester = new Calculador();
     }
