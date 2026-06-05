@@ -14,7 +14,7 @@ public class CalculadorTest {
     public void setUp(){
       calculadorTester = new Calculador();
     }
-    
+    //Test
   @Test
   public void testSumar() {
         System.out.println("Probando el metodo: Sumar");
